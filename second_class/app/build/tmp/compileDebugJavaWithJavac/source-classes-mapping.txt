@@ -4,10 +4,9 @@ com/example/second_class/BuildConfig.java
  com.example.second_class.BuildConfig
 com/example/second_class/page/listViewAdapter.java
  com.example.second_class.page.listViewAdapter
-com/example/second_class/page/pageOne.java
- com.example.second_class.page.pageOne
- com.example.second_class.page.pageOne$1
- com.example.second_class.page.pageOne$2
+com/example/second_class/page/pageThree.java
+ com.example.second_class.page.pageThree
+ com.example.second_class.page.pageThree$1
 com/example/second_class/page/pageTwo.java
  com.example.second_class.page.pageTwo
  com.example.second_class.page.pageTwo$1
@@ -19,9 +18,10 @@ com/example/second_class/page/viewAnimation.java
  com.example.second_class.page.viewAnimation$2$1
  com.example.second_class.page.viewAnimation$3
  com.example.second_class.page.viewAnimation$4
+com/example/second_class/page/pageOne.java
+ com.example.second_class.page.pageOne
+ com.example.second_class.page.pageOne$1
+ com.example.second_class.page.pageOne$2
 com/example/second_class/MainActivity.java
  com.example.second_class.MainActivity
  com.example.second_class.MainActivity$1
-com/example/second_class/page/pageThree.java
- com.example.second_class.page.pageThree
- com.example.second_class.page.pageThree$1

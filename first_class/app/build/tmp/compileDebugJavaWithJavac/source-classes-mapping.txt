@@ -1,0 +1,13 @@
+com/example/first_class/SearchAdapter.java
+ com.example.first_class.SearchAdapter
+com/example/first_class/BuildConfig.java
+ com.example.first_class.BuildConfig
+com/example/first_class/MainActivity.java
+ com.example.first_class.MainActivity
+ com.example.first_class.MainActivity$1
+ com.example.first_class.MainActivity$2
+com/example/first_class/ExampleActivity.java
+ com.example.first_class.ExampleActivity
+ com.example.first_class.ExampleActivity$1
+com/example/first_class/ItemViewHolder.java
+ com.example.first_class.ItemViewHolder
