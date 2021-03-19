@@ -1,0 +1,7 @@
+com/example/third_class/Clock.java
+ com.example.third_class.Clock
+ com.example.third_class.Clock$1
+com/example/third_class/MainActivity.java
+ com.example.third_class.MainActivity
+com/example/third_class/BuildConfig.java
+ com.example.third_class.BuildConfig
