@@ -1,0 +1,24 @@
+com/example/fifth_class/task/Task.java
+ com.example.fifth_class.task.Task
+com/example/fifth_class/task/TaskOperator.java
+ com.example.fifth_class.task.TaskOperator
+com/example/fifth_class/MainActivity.java
+ com.example.fifth_class.MainActivity
+ com.example.fifth_class.MainActivity$1
+ com.example.fifth_class.MainActivity$2
+com/example/fifth_class/createTask.java
+ com.example.fifth_class.createTask
+ com.example.fifth_class.createTask$1
+com/example/fifth_class/BuildConfig.java
+ com.example.fifth_class.BuildConfig
+com/example/fifth_class/database/TaskDbHelper.java
+ com.example.fifth_class.database.TaskDbHelper
+com/example/fifth_class/database/TaskContract.java
+ com.example.fifth_class.database.TaskContract
+ com.example.fifth_class.database.TaskContract$TaskTable
+com/example/fifth_class/itemViewHolder.java
+ com.example.fifth_class.itemViewHolder
+ com.example.fifth_class.itemViewHolder$1
+ com.example.fifth_class.itemViewHolder$2
+com/example/fifth_class/listViewAdapter.java
+ com.example.fifth_class.listViewAdapter
