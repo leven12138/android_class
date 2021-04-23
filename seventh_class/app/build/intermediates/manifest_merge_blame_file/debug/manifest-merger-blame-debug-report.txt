@@ -1,0 +1,99 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.seventh_class"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="16"
+8-->C:\Users\46142\AndroidStudioProjects\seventh_class\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="30" />
+9-->C:\Users\46142\AndroidStudioProjects\seventh_class\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+11-->C:\Users\46142\AndroidStudioProjects\seventh_class\app\src\main\AndroidManifest.xml:4:5-81
+11-->C:\Users\46142\AndroidStudioProjects\seventh_class\app\src\main\AndroidManifest.xml:4:22-78
+12    <uses-permission android:name="android.permission.CAMERA" />
+12-->C:\Users\46142\AndroidStudioProjects\seventh_class\app\src\main\AndroidManifest.xml:5:5-65
+12-->C:\Users\46142\AndroidStudioProjects\seventh_class\app\src\main\AndroidManifest.xml:5:22-62
+13    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+13-->C:\Users\46142\AndroidStudioProjects\seventh_class\app\src\main\AndroidManifest.xml:6:5-71
+13-->C:\Users\46142\AndroidStudioProjects\seventh_class\app\src\main\AndroidManifest.xml:6:22-68
+14
+15    <uses-feature android:name="android.hardware.camera" />
+15-->C:\Users\46142\AndroidStudioProjects\seventh_class\app\src\main\AndroidManifest.xml:7:5-60
+15-->C:\Users\46142\AndroidStudioProjects\seventh_class\app\src\main\AndroidManifest.xml:7:19-57
+16    <uses-feature android:name="android.hardware.camera.autofocus" />
+16-->C:\Users\46142\AndroidStudioProjects\seventh_class\app\src\main\AndroidManifest.xml:8:5-70
+16-->C:\Users\46142\AndroidStudioProjects\seventh_class\app\src\main\AndroidManifest.xml:8:19-67
+17
+18    <application
+18-->C:\Users\46142\AndroidStudioProjects\seventh_class\app\src\main\AndroidManifest.xml:10:5-36:19
+19        android:allowBackup="true"
+19-->C:\Users\46142\AndroidStudioProjects\seventh_class\app\src\main\AndroidManifest.xml:11:9-35
+20        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+20-->[androidx.core:core:1.1.0] C:\Users\46142\.gradle\caches\transforms-2\files-2.1\73530a2d0c1df4b3085807c82555ce12\core-1.1.0\AndroidManifest.xml:24:18-86
+21        android:debuggable="true"
+22        android:icon="@mipmap/ic_launcher"
+22-->C:\Users\46142\AndroidStudioProjects\seventh_class\app\src\main\AndroidManifest.xml:12:9-43
+23        android:label="@string/app_name"
+23-->C:\Users\46142\AndroidStudioProjects\seventh_class\app\src\main\AndroidManifest.xml:13:9-41
+24        android:roundIcon="@mipmap/ic_launcher_round"
+24-->C:\Users\46142\AndroidStudioProjects\seventh_class\app\src\main\AndroidManifest.xml:14:9-54
+25        android:supportsRtl="true"
+25-->C:\Users\46142\AndroidStudioProjects\seventh_class\app\src\main\AndroidManifest.xml:15:9-35
+26        android:testOnly="true"
+27        android:theme="@style/Theme.Seventh_class" >
+27-->C:\Users\46142\AndroidStudioProjects\seventh_class\app\src\main\AndroidManifest.xml:16:9-51
+28        <activity android:name="com.example.seventh_class.MainActivity" >
+28-->C:\Users\46142\AndroidStudioProjects\seventh_class\app\src\main\AndroidManifest.xml:17:9-23:20
+28-->C:\Users\46142\AndroidStudioProjects\seventh_class\app\src\main\AndroidManifest.xml:17:19-47
+29            <intent-filter>
+29-->C:\Users\46142\AndroidStudioProjects\seventh_class\app\src\main\AndroidManifest.xml:18:13-22:29
+30                <action android:name="android.intent.action.MAIN" />
+30-->C:\Users\46142\AndroidStudioProjects\seventh_class\app\src\main\AndroidManifest.xml:19:17-69
+30-->C:\Users\46142\AndroidStudioProjects\seventh_class\app\src\main\AndroidManifest.xml:19:25-66
+31
+32                <category android:name="android.intent.category.LAUNCHER" />
+32-->C:\Users\46142\AndroidStudioProjects\seventh_class\app\src\main\AndroidManifest.xml:21:17-77
+32-->C:\Users\46142\AndroidStudioProjects\seventh_class\app\src\main\AndroidManifest.xml:21:27-74
+33            </intent-filter>
+34        </activity>
+35        <activity android:name="com.example.seventh_class.sysCameraActivity" />
+35-->C:\Users\46142\AndroidStudioProjects\seventh_class\app\src\main\AndroidManifest.xml:24:9-55
+35-->C:\Users\46142\AndroidStudioProjects\seventh_class\app\src\main\AndroidManifest.xml:24:19-52
+36        <activity android:name="com.example.seventh_class.customCameraActivity" />
+36-->C:\Users\46142\AndroidStudioProjects\seventh_class\app\src\main\AndroidManifest.xml:25:9-58
+36-->C:\Users\46142\AndroidStudioProjects\seventh_class\app\src\main\AndroidManifest.xml:25:19-55
+37
+38        <provider
+38-->C:\Users\46142\AndroidStudioProjects\seventh_class\app\src\main\AndroidManifest.xml:27:9-35:20
+39            android:name="androidx.core.content.FileProvider"
+39-->C:\Users\46142\AndroidStudioProjects\seventh_class\app\src\main\AndroidManifest.xml:29:13-62
+40            android:authorities="com.example.seventh_class.fileprovider"
+40-->C:\Users\46142\AndroidStudioProjects\seventh_class\app\src\main\AndroidManifest.xml:28:13-73
+41            android:exported="false"
+41-->C:\Users\46142\AndroidStudioProjects\seventh_class\app\src\main\AndroidManifest.xml:30:13-37
+42            android:grantUriPermissions="true" >
+42-->C:\Users\46142\AndroidStudioProjects\seventh_class\app\src\main\AndroidManifest.xml:31:13-47
+43            <meta-data
+43-->C:\Users\46142\AndroidStudioProjects\seventh_class\app\src\main\AndroidManifest.xml:32:13-34:53
+44                android:name="android.support.FILE_PROVIDER_PATHS"
+44-->C:\Users\46142\AndroidStudioProjects\seventh_class\app\src\main\AndroidManifest.xml:33:17-67
+45                android:resource="@xml/filepaths" />
+45-->C:\Users\46142\AndroidStudioProjects\seventh_class\app\src\main\AndroidManifest.xml:34:17-50
+46        </provider>
+47
+48        <activity
+48-->[pub.devrel:easypermissions:2.0.0] C:\Users\46142\.gradle\caches\transforms-2\files-2.1\716efd921bfa4f302da9c374545cbd49\jetified-easypermissions-2.0.0\AndroidManifest.xml:12:9-16:66
+49            android:name="pub.devrel.easypermissions.AppSettingsDialogHolderActivity"
+49-->[pub.devrel:easypermissions:2.0.0] C:\Users\46142\.gradle\caches\transforms-2\files-2.1\716efd921bfa4f302da9c374545cbd49\jetified-easypermissions-2.0.0\AndroidManifest.xml:13:13-86
+50            android:exported="false"
+50-->[pub.devrel:easypermissions:2.0.0] C:\Users\46142\.gradle\caches\transforms-2\files-2.1\716efd921bfa4f302da9c374545cbd49\jetified-easypermissions-2.0.0\AndroidManifest.xml:14:13-37
+51            android:label=""
+51-->[pub.devrel:easypermissions:2.0.0] C:\Users\46142\.gradle\caches\transforms-2\files-2.1\716efd921bfa4f302da9c374545cbd49\jetified-easypermissions-2.0.0\AndroidManifest.xml:15:13-29
+52            android:theme="@style/EasyPermissions.Transparent" />
+52-->[pub.devrel:easypermissions:2.0.0] C:\Users\46142\.gradle\caches\transforms-2\files-2.1\716efd921bfa4f302da9c374545cbd49\jetified-easypermissions-2.0.0\AndroidManifest.xml:16:13-63
+53    </application>
+54
+55</manifest>

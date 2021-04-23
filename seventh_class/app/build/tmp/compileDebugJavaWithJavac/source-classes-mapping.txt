@@ -1,0 +1,16 @@
+com/example/seventh_class/sysCameraActivity.java
+ com.example.seventh_class.sysCameraActivity
+ com.example.seventh_class.sysCameraActivity$1
+ com.example.seventh_class.sysCameraActivity$2
+com/example/seventh_class/viewAdapter.java
+ com.example.seventh_class.viewAdapter
+com/example/seventh_class/BuildConfig.java
+ com.example.seventh_class.BuildConfig
+com/example/seventh_class/MainActivity.java
+ com.example.seventh_class.MainActivity
+ com.example.seventh_class.MainActivity$1
+ com.example.seventh_class.MainActivity$2
+com/example/seventh_class/customCameraActivity.java
+ com.example.seventh_class.customCameraActivity
+ com.example.seventh_class.customCameraActivity$1
+ com.example.seventh_class.customCameraActivity$2
