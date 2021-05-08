@@ -40,9 +40,9 @@ public class Clock extends View {
     private float SECOND_POINTER_LENGTH;
     private float UNIT_DEGREE = (float) (6 * Math.PI / 180);// 一个小格的度数
 
-    private int mWidth, mCenterX, mCenterY, mRadius, count = 0;
+    private int mWidth, mCenterX, mCenterY, mRadius;
     private int nowHours, nowMinutes, nowSeconds;
-    private boolean am;
+    private boolean am, end = false;
 
     private int degreesColor;
     private final static String TAGS = "tips";
@@ -53,8 +53,7 @@ public class Clock extends View {
         @Override
         public void run() {
             passOneSecond ();
-            Log.d (TAGS, nowHours + ":" + nowMinutes + ":" + nowSeconds + "\t" + count);
-            invalidate ();
+            Log.d (TAGS, nowHours + ":" + nowMinutes + ":" + nowSeconds + "\t");
         }
     };
 
@@ -112,7 +111,6 @@ public class Clock extends View {
 
     @Override
     protected void onDraw (final Canvas canvas) {
-        count ++;
         super.onDraw(canvas);
 
         mWidth = getHeight() > getWidth() ? getWidth() : getHeight();
@@ -130,8 +128,6 @@ public class Clock extends View {
         drawHoursValues(canvas);
         drawNeedles(canvas);
         drawHoursValues(canvas);
-
-        mHandler.postDelayed (runnable, 1000);
     }
 
     private void drawDegrees (Canvas canvas) {
@@ -245,6 +241,14 @@ public class Clock extends View {
                 }
             }
         }
+        if (! end) {
+            mHandler.postDelayed (runnable, 1000);
+        }
+    }
+
+    public void start () {
+        end = false;
+        passOneSecond ();
     }
 
     public int[] getTime () {
@@ -256,7 +260,6 @@ public class Clock extends View {
         }
         time[1] = nowMinutes;
         time[2] = nowSeconds;
-        invalidate();
 
         return time;
     }
@@ -271,6 +274,5 @@ public class Clock extends View {
         }
         nowMinutes = time[1];
         nowSeconds = time[2];
-        invalidate();
     }
 }

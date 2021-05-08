@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#333333">
+
+    <EditText
+        android:id="@+id/id_edit"
+        android:textColor="@color/white"
+        android:hint="用户ID"
+        android:textColorHint="#c1c1c1"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/imput_rect"
+        android:padding="10dp"/>
+
+    <EditText
+        android:id="@+id/name_edit"
+        android:textColor="@color/white"
+        android:hint="用户名"
+        android:textColorHint="#c1c1c1"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/id_edit"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/imput_rect"
+        android:padding="10dp" />
+
+    <Button
+        android:id="@+id/log_button"
+        android:text="登录"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        android:minHeight="0dp"
+        android:minWidth="0dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_below="@id/name_edit"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button_shape"
+        android:paddingHorizontal="20dp"
+        android:paddingVertical="12dp"/>
+
+</RelativeLayout>

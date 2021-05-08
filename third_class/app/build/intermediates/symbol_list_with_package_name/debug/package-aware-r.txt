@@ -1517,6 +1517,7 @@ id filter_chip
 id fitToContents
 id fixed
 id forever
+id get
 id ghost_view
 id ghost_view_holder
 id gone
@@ -1594,6 +1595,7 @@ id pin
 id progress_circular
 id progress_horizontal
 id radio
+id reset
 id right
 id right_icon
 id right_side

@@ -3,6 +3,7 @@ package com.example.third_class;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.os.Handler;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
@@ -19,15 +20,27 @@ public class MainActivity extends AppCompatActivity {
     private Toast toast;
     int[] time;
     String text;
+    private Handler mHandler = new Handler ();
+    private Runnable runnable;
 
     @Override
     protected void onCreate (Bundle savedInstanceState) {
         super.onCreate (savedInstanceState);
         setContentView (R.layout.activity_main);
         mClock = (Clock) findViewById(R.id.clock);
+        mClock.start ();
         mText = (EditText) findViewById(R.id.text);
 
-        /*
+        runnable = new Runnable() {
+            @Override
+            public void run() {
+                mClock.invalidate ();
+                update ();
+            }
+        };
+
+        update();
+
         mGetButton = (Button) findViewById(R.id.get);
         mGetButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -45,7 +58,7 @@ public class MainActivity extends AppCompatActivity {
                 String[] tmp = text.split(":");
                 if (tmp.length != 3) {
                     toast = Toast.makeText (getApplicationContext(), "invalid format", Toast.LENGTH_SHORT);
-                    toast.show();
+                    toast.show ();
                 }
                 try {
                     time = new int[3];
@@ -55,10 +68,13 @@ public class MainActivity extends AppCompatActivity {
                     mClock.setTime(time);
                 }catch (NumberFormatException w) {
                     toast = Toast.makeText (getApplicationContext(), "invalid format", Toast.LENGTH_SHORT);
-                    toast.show();
+                    toast.show ();
                 }
             }
         });
-         */
+    }
+
+    public void update () {
+        mHandler.postDelayed (runnable, 1000);
     }
 }
